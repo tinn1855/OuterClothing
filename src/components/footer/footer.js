@@ -39,7 +39,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#2A65BD] text-center py-5 space-x-5">
+            <div className="bg-[#2A65BD] text-center py-3 space-x-5">
                 <a href="/">
                     <FontAwesomeIcon icon={faFacebook} size="2x" color="white" />
                 </a>

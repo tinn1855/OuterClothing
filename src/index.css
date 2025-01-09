@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+/* .container {
     max-width: 1280px;
+} */
+
+.text-blue {
+    color: #2A65BD;
 }

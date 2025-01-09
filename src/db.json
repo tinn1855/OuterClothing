@@ -1,0 +1,49 @@
+{
+    "bestSeller": [
+      { 
+        "id": 1, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-01.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 2, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-02.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 3, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-03.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 4, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-02.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      }
+    ],
+    "jacket": [
+      { 
+        "id": 1, 
+        "name": "Áo Khoác Bomber Basic", 
+        "image": "jacket-01.jpg", 
+        "price": "650.000", 
+        "priceSale": "599.000" 
+      },
+      { 
+        "id": 2, 
+        "name": "Áo Khoác Hoodie Classic", 
+        "image": "jacket-02.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      }
+    ]
+  }
+  
