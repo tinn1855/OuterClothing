@@ -32,18 +32,118 @@
     "jacket": [
       { 
         "id": 1, 
-        "name": "Áo Khoác Bomber Basic", 
+        "name": "Varsity JOGGER Dạ Phối Tay Da", 
         "image": "jacket-01.jpg", 
         "price": "650.000", 
         "priceSale": "599.000" 
       },
       { 
         "id": 2, 
-        "name": "Áo Khoác Hoodie Classic", 
+        "name": "Bomber Chữ G Phối Tay Da", 
         "image": "jacket-02.jpg", 
         "price": "700.000", 
         "priceSale": "649.000" 
+      },
+      { 
+        "id": 3, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-03.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      },
+      { 
+        "id": 4, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-04.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      },
+      { 
+        "id": 5, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-05.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      },
+      { 
+        "id": 6, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-06.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      },{ 
+        "id": 7, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-07.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      }
+      ,{ 
+        "id": 8, 
+        "name": "Bomber Chữ G Phối Tay Da", 
+        "image": "jacket-08.jpg", 
+        "price": "700.000", 
+        "priceSale": "649.000" 
+      }
+    ],
+    "pants": [
+      { 
+        "id": 1, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-01.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 2, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-02.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 3, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-03.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 4, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-04.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      }
+    ],
+    "hoodies": [
+      { 
+        "id": 1, 
+        "name": "Áo Sweater Novita Nỉ Lót Lông", 
+        "image": "hoodie-01.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 2, 
+        "name": "Áo Sweater Novita Nỉ Lót Lông", 
+        "image": "hoodie-02.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 3, 
+        "name": "Áo Sweater Novita Nỉ Lót Lông", 
+        "image": "hoodie-03.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 4, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "hoodie-04.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
       }
     ]
   }
-  

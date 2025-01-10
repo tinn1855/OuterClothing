@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
+    
     return (
-        <div className="sticky top-0 bg-white z-50">
+        <div className="sticky top-0 bg-white z-50 shadow-md" id='header'>
             <div className="container mx-auto px-5 flex justify-between items-center py-4">
                 <div className="w-1/4">
                     <a href="/" className="">
