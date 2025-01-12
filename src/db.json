@@ -114,6 +114,32 @@
         "image": "pant-04.jpg", 
         "price": "350.000", 
         "priceSale": "199.000" 
+      },
+      { 
+        "id": 5, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-05.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },{ 
+        "id": 6, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-06.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },{ 
+        "id": 7, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-07.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 8, 
+        "name": "Quần âu nam ống rộng JONATO", 
+        "image": "pant-08.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
       }
     ],
     "hoodies": [
@@ -142,6 +168,49 @@
         "id": 4, 
         "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
         "image": "hoodie-04.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      }
+    ],
+    "tshirts": [
+      { 
+        "id": 1, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-01.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 2, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-02.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 3, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-03.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 4, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-04.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000"
+      },{ 
+        "id": 5, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-05.jpg", 
+        "price": "350.000", 
+        "priceSale": "199.000" 
+      },
+      { 
+        "id": 6, 
+        "name": "Áo Thun RAGLAN Line Tee Vegsivir", 
+        "image": "tshirt-06.jpg", 
         "price": "350.000", 
         "priceSale": "199.000" 
       }
