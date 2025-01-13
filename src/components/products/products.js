@@ -1,7 +1,6 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../footer/footer";
 import Header from "../header/header";
-import ImageSlider from "../slider/slider";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from "react";
@@ -31,15 +30,24 @@ function Products() {
     return (
         <div>
             <Header/>
-            <ImageSlider/>
+           
             <div className="container mx-auto px-5 mt-10">
                 <div className="flex items-center">
                     <div className="w-1/5">
                         Trang chủ/ {}
                     </div>
-                    <div className="border px-4 rounded-full py-1 w-1/3 flex items-center space-x-2">
+                    <div className="border px-4 rounded-full py-1 w-3/5 flex items-center space-x-2">
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
-                        <input placeholder="Search" className="outline-none w-full" />
+                        <input placeholder="Tìm kiếm sản phẩm" className="outline-none w-full" />
+                    </div>
+                    <div className="w-1/5 flex justify-end ">
+                        <select className="outline-none border rounded-md py-2 px-4 hover:bg-gray-100 hover:shadow-sm">
+                            <option>Mặc định</option>
+                            <option>Bán chạy</option>
+                            <option>Mới nhất</option>
+                            <option>Giá thấp đến cao</option>
+                            <option>Giá cao đến thấp</option>
+                        </select>
                     </div>
                 </div>
                 <div className="flex mt-5">
@@ -86,6 +94,9 @@ function Products() {
                             <input type="checkbox"/>
                             <label>2XL</label>
                         </div>
+                        <button className="mt-5 bg-gray-500 px-3 py-1 text-white rounded-sm">
+                            Xóa tất cả bộ lọc
+                        </button>
                     </div>
                     <div className="w-4/5 grid grid-cols-4 gap-5">
                         {tshirts.map((tshirt) => (

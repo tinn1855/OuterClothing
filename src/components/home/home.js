@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Header from '../header/header'
 import ImageSlider from '../slider/slider'
 import Footer from '../footer/footer'
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -93,9 +94,9 @@ function Home() {
             <div className="grid grid-cols-4 gap-5 mt-5">
                 {products.map((bestSeller) => (
                     <div key={bestSeller.id} className="col-span-1 text-center">
-                        <a className="relative" href="/">
+                        <Link className="relative" to="/products/detail">
                             <img src={"images/bestSeller/" + bestSeller.image} alt="" className="transition-transform duration-300 hover:scale-110"/>
-                        </a>
+                        </Link>
                         <h1 className="text-sm font-semibold text-gray-500 mt-5">{bestSeller.name}</h1>
                         <div className="flex justify-center space-x-3 font-bold">
                             <del className="text-gray-500">{bestSeller.price} VND</del>
