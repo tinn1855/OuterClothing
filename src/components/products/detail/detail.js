@@ -9,6 +9,10 @@ function ProductDetail() {
     const [tshirts, setTshirts] = useState([])
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
+      
+    useEffect(() => {
         fetch("http://localhost:3000/tshirts")
             .then((response) => {
                 if (!response.ok) {
