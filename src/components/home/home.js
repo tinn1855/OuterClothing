@@ -89,7 +89,7 @@ function Home() {
             <div className="flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
                 <span className="mx-4 text-gray-500 font-bold text-2xl text-blue">BEST SELLER</span>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-5">
+            <div className="grid grid-cols-4 gap-8 mt-5">
                 {products.map((bestSeller) => (
                     <div key={bestSeller.id} className="col-span-1 text-center">
                         <Link className="relative" to="/products/detail">
@@ -106,7 +106,7 @@ function Home() {
             <div className="mt-10 flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
                 <span className="mx-4 text-gray-500 font-bold text-2xl text-blue">T-SHIRTS</span>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-5">
+            <div className="grid grid-cols-4 gap-8 mt-5">
                 {tshirts.map((tshirt) => (
                     <div key={tshirt.id} className="col-span-1 text-center">
                     <a className="relative" href="/">
@@ -123,10 +123,10 @@ function Home() {
             <div className="mt-10 flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
                 <span className="mx-4 text-gray-500 font-bold text-2xl text-blue">JACKET</span>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-5">
+            <div className="grid grid-cols-4 gap-8 mt-5">
                 {jackets.map((jacket) => (
                     <div key={jacket.id} className="col-span-1 text-center">
-                    <img src={"images/jacket/" + jacket.image} alt=""/>
+                    <img src={"images/jacket/" + jacket.image} alt="" className="transition-transform duration-300 hover:scale-110"/>
                     <h1 className="text-sm font-semibold text-gray-500 mt-5">{jacket.name}</h1>
                     <div className="flex justify-center space-x-3 font-bold">
                         <del className="text-gray-500">{jacket.price} VND</del>
@@ -138,10 +138,10 @@ function Home() {
             <div className="mt-10 flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
                 <span className="mx-4 text-gray-500 font-bold text-2xl text-blue">PANTS</span>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-5">
+            <div className="grid grid-cols-4 gap-8 mt-5">
                 {pants.map((pant) => (
                     <div key={pant.id} className="col-span-1 text-center">
-                    <img src={"images/pants/" + pant.image} alt=""/>
+                    <img src={"images/pants/" + pant.image} alt="" className="transition-transform duration-300 hover:scale-110"/>
                     <h1 className="text-sm font-semibold text-gray-500 mt-5">{pant.name}</h1>
                     <div className="flex justify-center space-x-3 font-bold">
                         <del className="text-gray-500">{pant.price} VND</del>
@@ -153,10 +153,10 @@ function Home() {
             <div className="mt-10 flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
                 <span className="mx-4 text-gray-500 font-bold text-2xl text-blue">HOODIES/SWEATHER</span>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-5">
+            <div className="grid grid-cols-4 gap-8 mt-5">
                 {hoodies.map((hoodie) => (
                     <div key={hoodie.id} className="col-span-1 text-center">
-                    <img src={"images/hoodies/" + hoodie.image} alt=""/>
+                    <img src={"images/hoodies/" + hoodie.image} alt="" className="transition-transform duration-300 hover:scale-110"/>
                     <h1 className="text-sm font-semibold text-gray-500 mt-5">{hoodie.name}</h1>
                     <div className="flex justify-center space-x-3 font-bold">
                         <del className="text-gray-500">{hoodie.price} VND</del>

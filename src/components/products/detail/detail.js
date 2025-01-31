@@ -93,8 +93,23 @@ function ProductDetail() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 space-y-2">
                     <h1 className="text-xl font-bold">CHI TIẾT SẢN PHẨM</h1>
+                    <i className="font-semibold text-xl text-[#2F6AC2]">Áo Thun RAGLAN Line Tee Vegsivir</i>
+                    <p>Hàng chuẩn <b>OUTERCLO</b> sản xuất, tem mác chính hãng.</p>
+                    <p>Chất liệu: Cotton 2 chiều <b>280GSM</b> </p>
+                    <ul className="list-disc ml-5">
+                        <li>Vải mềm mại và ấm áp nhờ mặt trong vải được phủ một lớp lông tơ ngắn, nên bề mặt vải vô cùng mềm mại, mịn màng.</li>
+                        <li>Vải ít nhăn, ít bám bẩn.</li>
+                        <li>Bề mặt vải dai co giãn, khó bị xước</li>
+                    </ul>
+                    <h1 className="font-bold">LƯU Ý</h1>
+                    <ul className="list-disc ml-5">
+                        <li>Không giặt máy trong 10 ngày đầu</li>
+                        <li>Không nên sấy và sử dụng chất tẩy, lộn ngược khi giặt để áo bền hơn</li>
+                        <li>Nên giặt với nước lạnh dưới 40 độ và tuyệt đối không nên giặt với nước nóng sẽ làm co giãn sợi vải.</li>
+                        <li>Khi phơi lộn trái và không phơi trực tiếp dưới ánh nắng mặt trời</li>
+                    </ul>
                 </div>
                 <div className="mt-10">
                     <h1 className="text-xl font-bold">SẢM PHẨM TƯƠNG TỰ</h1>

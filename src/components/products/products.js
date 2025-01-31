@@ -98,7 +98,7 @@ function Products() {
                             Xóa tất cả bộ lọc
                         </button>
                     </div>
-                    <div className="w-4/5 grid grid-cols-4 gap-5">
+                    <div className="w-4/5 grid grid-cols-4 gap-8">
                         {tshirts.map((tshirt) => (
                             <div key={tshirt.id} className="col-span-1 text-center">
                                 <a className="relative" href="/">
@@ -114,7 +114,6 @@ function Products() {
                     </div>
                 </div>
             </div>
-
 
             <Footer/>
         </div>
