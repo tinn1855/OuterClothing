@@ -31,7 +31,9 @@ function Header() {
                     <button onClick={() => setModalIsOpen(true)}>
                         <FontAwesomeIcon icon={faUser} />
                     </button>
-                    <FontAwesomeIcon icon={faCartShopping} />
+                    <Link to="/cart">
+                        <FontAwesomeIcon icon={faCartShopping} />
+                    </Link>
                 </div>
                 <Modal 
                     isOpen={modalIsOpen} 
