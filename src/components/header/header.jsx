@@ -1,13 +1,26 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal'; // Import Modal từ react-modal
+
+import { styled } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import Badge, { badgeClasses } from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
+
 
 Modal.setAppElement('#root');
 
 function Header() {
     const [modalIsOpen, setModalIsOpen] = useState(false)
+
+    const CartBadge = styled(Badge)`
+        & .${badgeClasses.badge} {
+            top: -12px;
+            right: -6px;
+        }
+        `;
     
     return (
         
@@ -31,9 +44,11 @@ function Header() {
                     <button onClick={() => setModalIsOpen(true)}>
                         <FontAwesomeIcon icon={faUser} />
                     </button>
-                    <Link to="/cart">
-                        <FontAwesomeIcon icon={faCartShopping} />
-                    </Link>
+                   
+                    <IconButton href='/cart'>
+                        <ShoppingCartIcon fontSize="small" />
+                        <CartBadge badgeContent={1} color="primary" overlap="circular" />
+                    </IconButton>
                 </div>
                 <Modal 
                     isOpen={modalIsOpen} 

@@ -3,7 +3,8 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong, faTag } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import React from "react";
+import Button from "@mui/material/Button";
 
 function Cart() {
     const [quantity, setquantity] = useState(1)
@@ -11,6 +12,7 @@ function Cart() {
     const handleQuantityChange = (e) => {
         setquantity(e.target.value)
     }
+    
 
 
     return (
@@ -67,13 +69,10 @@ function Cart() {
                     </tbody>
                 </table>
                 <div className="flex space-x-5 mt-5">
-                    <Link to="/" className="border flex items-center font-semibold text-gray-600 space-x-1 px-4 py-1">
+                    <Button variant="outlined" color="primary" className="space-x-2">
                         <FontAwesomeIcon icon={faArrowLeftLong} />
                         <h1>Tiếp tục xem sản phẩm</h1>
-                    </Link>
-                    <button className="bg-gray-500 font-semibold px-4 py-1 text-white border">
-                        Cập nhật giỏ hàng
-                    </button>
+                    </Button>
                 </div>
                 </div>
                 <div className="w-2/5 mt-10">
@@ -99,7 +98,7 @@ function Cart() {
                             <h1 className="mt-1">Tổng</h1>
                             <p className="text-red-500 font-semibold">224.000 VND</p>
                         </div>
-                        <button className="w-full bg-red-500 text-white font-semibold py-2 rounded-md">THANH TOÁN</button>
+                        <Button className="w-full" variant="contained" color="primary">THANH TOÁN</Button>
                     </div>
                 </div>
             </div>
