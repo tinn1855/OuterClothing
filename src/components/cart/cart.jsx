@@ -6,6 +6,7 @@ import { faArrowLeftLong, faTag } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Button from "@mui/material/Button";
 
+
 function Cart() {
     const [quantity, setquantity] = useState(1)
 
@@ -16,23 +17,29 @@ function Cart() {
 
 
     return (
-        <div>
+        <div className="">
             <Header/>
+            <div className="text-center flex justify-center mt-10 font-medium text-gray-700">
+                <h1>GIỎ HÀNG</h1>
+                <h1>/TIẾN HÀNH THANH TOÁN</h1>
+            </div>
             <div className="container mx-auto px-5 flex space-x-10">
                 <div className="w-3/5 mt-10">
                 <table className="w-full">
                     <thead>
-                        <tr className="text-left">
+                        <tr className="text-left text-gray-700 font-medium">
                             <th>Sản phẩm</th>
                             <th>Giá</th>
                             <th>Số lượng</th>
                             <th>Tạm tính</th>
                         </tr>
                     </thead>
-                    <tbody className="font-semibold">
+                    <tbody className="font-medium text-gray-700 text-sm mb-10">
+                        <tr className="h-4"></tr> {/* Dòng ẩn để tạo khoảng cách */}
                         <tr>
                             <td>
                                 <div className="flex items-center space-x-3">
+                                    
                                     <img className="w-16" src="/images/tshirts/tshirt-01.jpg" alt=""/>
                                     <h1>Áo Thun RAGLAN Line Tee Vegsivir</h1>
                                 </div>
@@ -48,7 +55,8 @@ function Cart() {
                             <td className="text-red-500">199.000 VND</td>
                         </tr>
                     </tbody>
-                    <tbody className="font-semibold mb-8">
+                    <tbody className="font-medium text-gray-700 text-sm">
+                        <tr className="h-4"></tr> {/* Dòng ẩn để tạo khoảng cách */}
                         <tr>
                             <td>
                                 <div className="flex items-center space-x-3">
@@ -69,14 +77,14 @@ function Cart() {
                     </tbody>
                 </table>
                 <div className="flex space-x-5 mt-5">
-                    <Button variant="outlined" color="primary" className="space-x-2">
+                    <Button variant="outlined" color="primary" className="space-x-2" size="small">
                         <FontAwesomeIcon icon={faArrowLeftLong} />
                         <h1>Tiếp tục xem sản phẩm</h1>
                     </Button>
                 </div>
                 </div>
                 <div className="w-2/5 mt-10">
-                    <div className="space-y-2">
+                    <div className="space-y-5">
                         <h1 className="font-bold">Cộng giỏ hàng</h1>
                         <div className="border-b w-full"></div>
                         <div className="flex justify-between">
@@ -98,7 +106,7 @@ function Cart() {
                             <h1 className="mt-1">Tổng</h1>
                             <p className="text-red-500 font-semibold">224.000 VND</p>
                         </div>
-                        <Button className="w-full" variant="contained" color="primary">THANH TOÁN</Button>
+                        <Button href="/payment" className="w-full" variant="contained" color="error">THANH TOÁN</Button>
                     </div>
                 </div>
             </div>

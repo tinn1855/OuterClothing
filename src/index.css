@@ -10,3 +10,7 @@
 .text-blue {
     color: #2A65BD;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

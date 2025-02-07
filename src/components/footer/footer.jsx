@@ -9,7 +9,7 @@ function Footer() {
         <footer>
             <div className="bg-gray-100 py-10 mt-10">
                 <div className="container mx-auto px-5 flex">
-                    <div className="w-1/2">
+                    <div className="w-1/2 flex flex-col space-y-1">
                         <h1 className="font-bold text-lg text-[#2A65BD]">CÔNG TY TNHH MTV OUTERCLO</h1>
                         <p className="text-gray-500">
                             <b>Trụ sở chính:</b> Phú Mỹ, Phú Vang, Thành phố Huế.
@@ -25,14 +25,14 @@ function Footer() {
                         </p>
                     </div>
                     <div className="w-1/2 flex">
-                        <div className="w-1/2 font-semibold text-gray-500">
+                        <div className="w-1/2 font-medium text-gray-500 flex flex-col space-y-1">
                             <h1 className="font-bold text-lg text-[#2A65BD]">Thông tin chung</h1>
                             <a href="/"><h2>Về chúng tôi</h2></a>
                             <a href="/"><h2>Câu hỏi thường gặp</h2></a>
                         </div>
-                        <div className="w-1/2 font-semibold text-gray-500">
+                        <div className="w-1/2 font-medium text-gray-500 flex flex-col space-y-1">
                             <h1 className="font-bold text-lg text-[#2A65BD]">Điều khoản chung</h1>
-                            <a href="/"><h2>Chính sách bảo mật</h2></a>
+                            <a href="/"><span>Chính sách bảo mật</span></a>
                             <a href="/"><h2>Điều khoản sử dụng</h2></a>
                             <a href="/"><h2>Chính sách giải quyết tranh chấp</h2></a>
                         </div>

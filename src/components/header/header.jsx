@@ -8,6 +8,7 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Badge, { badgeClasses } from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 
 Modal.setAppElement('#root');
@@ -32,7 +33,7 @@ function Header() {
                     </a>
                 </div>
                 <div className="w-2/4">
-                    <ul className="flex justify-between font-semibold">
+                    <ul className="flex justify-between font-medium text-gray-600">
                         <a href="/"><li className="hover:text-[#2F6AC2]">Trang chủ</li></a>
                         <Link to="/products"><li className="hover:text-[#2F6AC2]">Sản phẩm</li></Link>
                         <a href="/"><li className="hover:text-[#2F6AC2]">Bộ sưu tập</li></a>
@@ -40,11 +41,10 @@ function Header() {
                         <a href="/"><li className="hover:text-[#2F6AC2]">Liên hệ</li></a>
                     </ul>
                 </div>
-                <div className="w-1/4 flex justify-end items-center space-x-5">
-                    <button onClick={() => setModalIsOpen(true)}>
-                        <FontAwesomeIcon icon={faUser} />
-                    </button>
-                   
+                <div className="w-1/4 flex justify-end items-center">
+                    <IconButton onClick={() => setModalIsOpen(true)}>   
+                        <PersonOutlineIcon  />
+                    </IconButton>
                     <IconButton href='/cart'>
                         <ShoppingCartIcon fontSize="small" />
                         <CartBadge badgeContent={1} color="primary" overlap="circular" />
