@@ -7,7 +7,7 @@ function Payment() {
     return (
         <div>
             <Header/>
-            <div className="container mx-auto px-5 mt-10 flex space-x-8">
+            <div className="container mx-auto px-5 mt-12 flex items-center space-x-8">
                 <div className="w-3/5 text-gray-600 space-y-5">
                     <h1 className="text-xl font-medium">THÔNG TIN THANH TOÁN</h1>
                     <div>
@@ -76,33 +76,39 @@ function Payment() {
                         <h1>Sản phẩm</h1>
                         <h1>Tạm tính</h1>
                     </div>
-                    <div className="border-b border-gray-300 mt-1"></div>
+                    <div className="border-b border-gray-300"></div>
                     <div className="flex justify-between mt-3">
                         <h1 className="text-sm">Áo Thun Newseven Curve - Đen, M  × 1</h1>
                         <h1 className="font-medium text-sm text-red-500">199.000 VND</h1>
                     </div>
-                    <div className="flex justify-between mt-1">
+                    <div className="flex justify-between">
                         <h1 className="text-sm">Áo Thun Newseven Curve - Trắng, M  × 1</h1>
                         <h1 className="font-medium text-sm text-red-500">199.000 VND</h1>
                     </div>
-                    <div className="border-b border-gray-300 mt-3"></div>
-                    <div className="flex justify-between mt-1">
-                        <h1 className="text-sm font-medium">Tạm tính</h1>
-                        <h1 className="font-medium text-sm text-red-500">398.000 VND</h1>
+                    <div className="border-b border-gray-300"></div>
+                    <div className="flex flex-col space-y-2">
+                        <div className="flex justify-between">
+                            <h1 className="text-sm font-medium">Tạm tính</h1>
+                            <h1 className="font-medium text-sm text-red-500">398.000 VND</h1>
+                        </div>
+                        <div className="flex justify-between">
+                            <h1 className="text-sm font-medium">Phí ship</h1>
+                            <h1 className="font-medium text-sm text-red-500">25.000 VND</h1>
+                        </div>
+                        <div className="flex justify-between">
+                            <h1 className="text-sm font-medium">Giảm giá</h1>
+                            <h1 className="font-medium text-sm text-red-500">39.000 VND</h1>
+                        </div>
                     </div>
-                    <div className="flex justify-between mt-1">
-                        <h1 className="text-sm font-medium">Phí ship</h1>
-                        <h1 className="font-medium text-sm text-red-500">25.000 VND</h1>
-                    </div>
-                    <div className="border-b border-gray-300 mt-1"></div>
-                    <div className="flex justify-between mt-3">
+                    <div className="border-b border-gray-300"></div>
+                    <div className="flex justify-between">
                         <h1 className="text-sm font-medium">Tổng</h1>
                         <h1 className="font-medium text-sm text-red-500">423.000 VND</h1>
                     </div>
-                    <div className="flex justify-end mt-3">
+                    <div className="flex justify-end">
                         <h1 className="text-sm">Thanh toán khi nhận hàng</h1>
                     </div>
-                    <Button href="/" className="w-full mt-3" variant="contained" color="error">ĐẶT HÀNG</Button>
+                    <Button href="/" className="w-full" variant="contained" color="error">ĐẶT HÀNG</Button>
                 </div>
             </div>
             <Footer/>
