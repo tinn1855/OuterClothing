@@ -10,7 +10,7 @@ import Products from "../components/products/products";
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/products', component: Products },
-    { path: '/products/detail', component: ProductDetail },
+    { path: '/products/:id', component: ProductDetail },
     { path: '/cart', component: Cart},
     { path: '/payment', component: Payment}
 
