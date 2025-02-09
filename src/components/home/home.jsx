@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 function Home() {
     const [products, setProducts] = useState([]);
     const [bestSellers, setBestSellers] = useState([]);
+
+    
     
     useEffect(() => {
         fetch("http://localhost:3000/products")
@@ -56,7 +58,7 @@ function CategorySection({ title, products, folder }) {
     return (
         <>
             <div className="mt-10 flex items-center before:flex-grow before:border-t before:border-gray-300 after:flex-grow after:border-t after:border-gray-300">
-                <span className="mx-4 text-gray-500 font-bold text-2xl">{title}</span>
+                <span className="mx-4 text-blue font-bold text-2xl">{title}</span>
             </div>
             <div className="grid grid-cols-4 gap-8 mt-5">
                 {products.map((product) => (
@@ -67,8 +69,8 @@ function CategorySection({ title, products, folder }) {
 
                         <h1 className="text-sm font-semibold text-gray-500 mt-5">{product.name}</h1>
                         <div className="flex justify-center space-x-3 font-bold">
-                            <del className="text-gray-500">{product.price} VND</del>
-                            <h4 className="text-red-500">{product.priceSale} VND</h4>
+                            <del className="text-gray-500">{product.price.toLocaleString("vi-VN")} VND</del>
+                            <h4 className="text-red-500">{product.priceSale.toLocaleString("vi-VN")} VNĐ </h4>
                         </div>
                     </div>
                 ))}

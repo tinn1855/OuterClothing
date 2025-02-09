@@ -1,5 +1,6 @@
 import Footer from "../footer/footer";
 import Header from "../header/header";
+import { Link } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import Pagination from '@mui/material/Pagination';
@@ -100,9 +101,10 @@ function Products() {
                             {filteredProducts.length > 0 ? (
                                 filteredProducts.map((product) => (
                                     <div key={product.id} className="col-span-1 text-center">
-                                        <a className="relative" href="/">
+                                        <Link to={`/products/${product.id}`} className="relative" href="/">
                                             <img src={`images/${product.category}/${product.image}`} alt={product.name} className="transition-transform duration-300 hover:scale-110" />
-                                        </a>
+                                        </Link>
+                                        
                                         <h1 className="text-sm font-semibold text-gray-500 mt-5">{product.name}</h1>
                                         <div className="flex justify-center space-x-3 font-bold">
                                             <del className="text-gray-500">{product.price} VND</del>

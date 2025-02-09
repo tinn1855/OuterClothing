@@ -67,8 +67,8 @@ function ProductDetail() {
                     <div className="w-2/3">
                         <h1 className="text-xl font-bold text-gray-600">{product.name}</h1>
                         <div className="flex space-x-2 items-center ">
-                            <del className="font-medium text-gray-600">{product.price} VND</del>
-                            <p className="text-red-500 text-lg font-bold">{product.priceSale} VND</p>
+                            <del className="font-medium text-gray-600">{product.price.toLocaleString("vi-VN")} VND</del>
+                            <p className="text-red-500 text-lg font-bold">{product.priceSale.toLocaleString("vi-VN")} VND</p>
                         </div>
                         <div className="flex items-center space-x-4 mt-5">
                             <div className="w-1/6">
